@@ -1,0 +1,60 @@
+/* new-style.css - SurveyJunior Quantum */
+
+/* Scrollbar Personalizado (Estilo fino y moderno) */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(48, 232, 191, 0.4);
+    /* sj-green */
+}
+
+/* Animación Aurora (Delay utilitario para Tailwind) */
+.animation-delay-2000 {
+    animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+    animation-delay: 4s;
+}
+
+/* Utilidades de Vidrio (Glassmorphism profundo) */
+.glass-panel {
+    background: rgba(17, 24, 39, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Compatibilidad con Bootstrap Modales (Overrrides oscuros) */
+.modal-content {
+    background-color: #111827 !important;
+    /* sj-dark */
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #E5E7EB !important;
+    border-radius: 1rem !important;
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.modal-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}

@@ -1,0 +1,7 @@
+php_value display_errors On
+php_value mbstring.http_input auto
+php_value date.timezone America/New_York
+RewriteEngine On
+# --- NUEVA REGLA PARA ACORTADOR DE URL ---
+RewriteRule ^go/([a-zA-Z0-9_-]+)$ go.php?slug=$1 [L,QSA]
+# --- FIN NUEVA REGLA ---
